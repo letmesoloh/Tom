@@ -1,0 +1,59 @@
+TOM SERVICIOS GENERALES - SITIO WEB
+===================================
+
+ESTRUCTURA
+  index.html                       Página de inicio
+  obras-civiles.html               Landing de cada servicio
+  estructuras-metalicas.html
+  melamine-y-drywall.html
+  sistemas-electricos.html
+  aire-acondicionado.html
+  instalaciones-de-internet.html
+  camaras-de-seguridad.html
+  soporte-tecnico.html
+  assets/css/styles.css            Todos los estilos (colores y fuentes al inicio, en :root)
+  assets/js/config.js              DATOS DE LA EMPRESA  <-- edita este archivo
+  assets/js/main.js                Menú, animaciones, galería, formularios
+  assets/img/                      Fotos de la empresa y favicon
+
+1) CAMBIAR TUS DATOS (un solo archivo)
+Abre assets/js/config.js y reemplaza teléfono, WhatsApp, correo,
+dirección, horario, RUC y enlaces de redes sociales. Se actualizan
+solos en las 9 páginas: botones de llamar, WhatsApp, formularios,
+pie de página y botón flotante.
+
+  whatsapp: "51987654321"   -> con 51 delante, sin + ni espacios
+  telefonoLink: "+51987654321"
+
+2) CAMBIAR COLORES
+En assets/css/styles.css, al inicio (:root):
+  --navy   azul principal
+  --orange color de acento y botones
+
+3) SUBIR AL HOSTING (cPanel, Hostinger, etc.)
+  1. Entra al Administrador de archivos.
+  2. Abre public_html (la carpeta raíz de tu dominio).
+  3. Sube el ZIP y elige "Extraer". index.html debe quedar
+     directamente en public_html junto a la carpeta assets.
+  4. Borra el index.html o index.php antiguo si existía.
+  5. Abre tu dominio y prueba el menú, los botones y el formulario.
+
+FORMULARIOS
+Todos los formularios abren WhatsApp con la consulta del cliente ya
+escrita (nombre, teléfono, servicio y detalle). El cliente solo
+presiona Enviar. No se necesita servidor ni configuración extra.
+
+AGREGAR FOTOS NUEVAS
+Guarda la foto en assets/img/ (JPG de máx. 1400 px de ancho) y cambia
+el nombre del archivo en el <img src="assets/img/..."> que quieras.
+
+FOTOS DE INTERNET (UNSPLASH)
+Las fotos principales de cada servicio vienen de Unsplash (unsplash.com),
+de uso libre incluso comercial, sin necesidad de dar crédito. La web las
+carga directamente desde Unsplash. Si alguna no cargara, se muestra
+automáticamente una foto propia de la carpeta assets/img/.
+Las fotos de "Clientes reales, experiencias reales" son las de tu empresa.
+
+Si prefieres tenerlas en tu propio hosting: abre la dirección de la foto
+(la que empieza con https://images.unsplash.com/...) en el navegador,
+guárdala en assets/img/ y cambia esa dirección por assets/img/nombre.jpg.
